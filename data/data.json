@@ -4,7 +4,7 @@
       {
         "name": "Página do YouTube",
         "description": "Página do YouTube feita com HTML e CSS",
-        "image": "https://raw.githubusercontent.com/RafaeltiMoreira/desafio-page-youtube/main/.github/preview-page-youtube.png",
+        "image": "https://raw.githubusercontent.com/RafaeltiMoreira/desafio-page-youtube/main/.github/preview.png",
         "features": ["Flexbox", "Semântica", "Responsividade"],
         "technologies": [
           { 
@@ -24,7 +24,7 @@
       {
         "name": "Trilha CSS - DIO",
         "description": "Desafio 01 - Landing Page com HTML e CSS",
-        "image": "https://raw.githubusercontent.com/RafaeltiMoreira/trilha-css-desafio-01/main/.github/preview.png",
+        "image": "https://raw.githubusercontent.com/RafaeltiMoreira/trilha-css-desafio-01/main/.github/preview2.png",
         "features": ["Semântica", "Responsividade", "Boas práticas de estilização"],
         "technologies": [
           { 
