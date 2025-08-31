@@ -2,38 +2,68 @@
   "portfolio": {
     "projects": [
       {
-        "name": "",
-        "image": ""
+        "name": "Página do YouTube com HTML e CSS",
+        "description": "Página do YouTube",
+        "image": "assets/images/projects/josisbox.jpg",
+        "features": ["Flexbox", "Semântica", "Responsividade"],
+        "technologies": [
+          { 
+            "logo": "https://raw.githubusercontent.com/RafaeltiMoreira/desafio-page-youtube/main/.github/preview-page-youtube.png", 
+            "name": ["HTML5", "CSS3"]
+          }
+        ],
+        "links": {
+          "preview": "https://meusite.com/projeto1",
+          "github": "https://github.com/rafael/projeto1"
+        }
       },
       {
-        "name": "",
-        "image": ""
+        "name": "Dashboard Administrativo",
+        "description": "Painel para gestão de vendas e estoque",
+        "image": "assets/images/projects/dashboard.jpg",
+        "features": ["Gráficos", "Autenticação", "Responsividade"],
+        "technologies": [
+          { 
+            "logo": "assets/images/technologies/react.svg", 
+            "name": ["React", "JavaScript"]
+          }
+        ],
+        "links": {
+          "preview": "https://meusite.com/projeto2",
+          "github": "https://github.com/rafael/projeto2"
+        }
       },
       {
-        "name": "",
-        "image": ""
+        "name": "Landing Page Responsiva",
+        "description": "Página institucional otimizada para SEO",
+        "image": "assets/images/projects/landing.jpg",
+        "features": ["Grid Layout", "SEO", "Mobile First"],
+        "technologies": [
+          { 
+            "logo": "assets/images/technologies/html.svg", 
+            "name": ["HTML5", "CSS3", "JavaScript"]
+          }
+        ],
+        "links": {
+          "preview": "https://meusite.com/projeto3",
+          "github": "https://github.com/rafael/projeto3"
+        }
       },
       {
-        "name": "",
-        "image": ""
-      }
-    ],
-    "buttons": [
-      {
-        "preview": "",
-        "github": ""
-      },
-      {
-        "preview": "",
-        "github": ""
-      },
-      {
-        "preview": "",
-        "github": ""
-      },
-      {
-        "preview": "",
-        "github": ""
+        "name": "API de Processos",
+        "description": "API REST para gestão de processos administrativos",
+        "image": "assets/images/projects/api.jpg",
+        "features": ["Spring Boot", "DTO", "CRUD"],
+        "technologies": [
+          { 
+            "logo": "assets/images/technologies/java.svg", 
+            "name": ["Java", "Spring Boot"]
+          }
+        ],
+        "links": {
+          "preview": "https://meusite.com/projeto4",
+          "github": "https://github.com/rafael/projeto4"
+        }
       }
     ]
   }
