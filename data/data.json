@@ -1,0 +1,40 @@
+{
+  "portfolio": {
+    "projects": [
+      {
+        "name": "",
+        "image": ""
+      },
+      {
+        "name": "",
+        "image": ""
+      },
+      {
+        "name": "",
+        "image": ""
+      },
+      {
+        "name": "",
+        "image": ""
+      }
+    ],
+    "buttons": [
+      {
+        "preview": "",
+        "github": ""
+      },
+      {
+        "preview": "",
+        "github": ""
+      },
+      {
+        "preview": "",
+        "github": ""
+      },
+      {
+        "preview": "",
+        "github": ""
+      }
+    ]
+  }
+}
