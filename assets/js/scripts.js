@@ -72,3 +72,15 @@ menuLinks.forEach(item => {
     console.error("Erro ao carregar os dados:", err);
   }
 })();
+
+function downloadCurriculo() {
+  const pdfPath = 'assets/documents/currículo_assinado.pdf';
+  
+  const link = document.createElement('a');
+  link.href = pdfPath;
+  link.download = 'currículo_rafael_moreira.pdf';
+  
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
