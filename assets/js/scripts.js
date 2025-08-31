@@ -55,4 +55,20 @@ menuLinks.forEach(item => {
     menuLinks.forEach(i => i.classList.remove("active"));
     item.classList.add("active");
   })
-})
+});
+
+(async () => {
+  try {
+    const profileData = await fetchProfileData();
+
+    if (typeof updateProfileInfo === "function") updateProfileInfo(profileData);
+    if (typeof updateSoftSkills === "function") updateSoftSkills(profileData);
+    if (typeof updateHardSkills === "function") updateHardSkills(profileData);
+    if (typeof updateLanguages === "function") updateLanguages(profileData);
+    if (typeof updatePortfolio === "function") updatePortfolio(profileData);
+    if (typeof updateProfessionalExperience === "function") updateProfessionalExperience(profileData);
+    if (typeof updateProjects === "function") updateProjects(profileData);
+  } catch (err) {
+    console.error("Erro ao carregar os dados:", err);
+  }
+})();

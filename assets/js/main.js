@@ -61,72 +61,75 @@
 // FINAL DO CÓDIGO FUNCIONANDO COMO TESTE
 
 function updateProjects(profileData) {
-  const projectsWrapper = document.querySelector(".projects__container");
-  const baseCard = projectsWrapper.querySelector(".projects__card");
+  const wrapper = document.querySelector(".projects__container");
+  const baseCard = wrapper?.querySelector(".projects__card");
 
-  if (!profileData?.portfolio?.projects?.length) {
-    console.error("Nenhum projeto encontrado ou dados inválidos.");
+  if (!wrapper || !baseCard) {
+    console.error("Estrutura de projetos não encontrada (.projects__container / .projects__card).");
     return;
   }
 
-  const projects = profileData.portfolio.projects.slice(0, 4);
+  const projects = (profileData?.portfolio?.projects || []).slice(0, 4);
+  if (!projects.length) {
+    console.warn("Nenhum projeto encontrado.");
+    baseCard.innerHTML = "";
+    return;
+  }
 
-  projects.forEach((project, index) => {
-    const card = index === 0 ? baseCard : baseCard.cloneNode(true);
+  [...wrapper.querySelectorAll(".projects__card")].forEach((c, i) => i > 0 && c.remove());
 
-    card.className = `projects__card ${index === 1 || index === 3 ? "card--reverse" : ""}`;
+  projects.forEach((project, idx) => {
+    const card = idx === 0 ? baseCard : baseCard.cloneNode(true);
+
+    card.className = `projects__card ${idx === 1 || idx === 3 ? "card--reverse" : ""}`;
+
+    const featuresHTML = (project.features || [])
+      .map(f => `<li class="card__item">${f};</li>`)
+      .join("");
+
+    const techsHTML = (project.technologies || [])
+      .map(tech => {
+        const name = Array.isArray(tech.name) ? tech.name.join(", ") : (tech.name || "Tecnologia");
+        return `
+          <li class="technologies__item">
+            <img class="technologies__logo"
+                 src="${tech.logo || ""}"
+                 alt="Logo ${name}"
+                 title="${name}">
+          </li>`;
+      })
+      .join("");
 
     card.innerHTML = `
-      <img class="card__cover" src="${project.image || "assets/images/default.jpg"}" alt="Capa ${project.name || "Projeto"}">
+      <img class="card__cover"
+           src="${project.image || "assets/images/default.jpg"}"
+           alt="Capa ${project.name || "Projeto"}">
+
       <div class="card__body">
         <h3 class="card__title">${project.name || "Sem título"}</h3>
         <p class="card__description">${project.description || "Sem descrição"}</p>
 
-        <ul class="card__list">
-          ${(project.features || [])
-            .map(feature => `<li class="card__item">${feature};</li>`)
-            .join("")}
-        </ul>
-
-        <ul class="technologies__list">
-          ${(project.technologies || [])
-            .map(tech => `
-              <li class="technologies__item">
-                <img class="technologies__logo" src="${tech.logo || ""}" alt="Logo ${tech.name || "Tecnologia"}" title="${tech.name || "Tecnologia"}">
-              </li>
-            `)
-            .join("")}
-        </ul>
+        <ul class="card__list">${featuresHTML}</ul>
+        <ul class="technologies__list">${techsHTML}</ul>
 
         <div class="card__buttons">
-          <a href="${project.links?.preview || "#"}" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+          <a href="${project.links?.preview || "#"}"
+             target="_blank" rel="noopener noreferrer"
+             class="btn btn--primary">
             <span>Prévia</span>
             <i class="bi bi-arrow-up-right"></i>
           </a>
-          <a href="${project.links?.github || "#"}" target="_blank" rel="noopener noreferrer" class="btn">
+          <a href="${project.links?.github || "#"}"
+             target="_blank" rel="noopener noreferrer"
+             class="btn">
             <span>Repositório</span>
           </a>
         </div>
       </div>
     `;
 
-    if (index > 0) {
-      projectsWrapper.appendChild(card);
-    }
+    if (idx > 0) wrapper.appendChild(card);
   });
-
-  if (projects.length < 4) {
-    console.warn(`Apenas ${projects.length} projetos encontrados. Esperado: 4.`);
-  }
 }
 
-(async () => {
-  const profileData = await fetchProfileData();
-  updateProfileInfo(profileData);
-  updateSoftSkills(profileData);
-  updateHardSkills(profileData);
-  updateLanguages(profileData);
-  updatePortfolio(profileData);
-  updateProfessionalExperience(profileData);
-  updateProjects(profileData);
-})();
+window.updateProjects = updateProjects;
