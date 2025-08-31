@@ -1,7 +1,6 @@
 function updateProjects(profileData) {
   const projectsContainer = document.getElementById("projects-container")
   projectsContainer.innerHTML = profileData.portfolio.projects.map(project => `
-    <div class="projects__card">
       <img class="card__cover" src="${project.image}" alt="Capa ${project.name}">
       <div class="card__body">
         <h3 class="card__title">${project.name}</h3>
@@ -24,7 +23,6 @@ function updateProjects(profileData) {
             <span>Repositório</span>
           </a>
         </div>
-      </div>
     </div>
   `).join("")
 }

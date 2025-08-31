@@ -4,17 +4,21 @@
       {
         "name": "Página do YouTube com HTML e CSS",
         "description": "Página do YouTube",
-        "image": "assets/images/projects/josisbox.jpg",
+        "image": "https://raw.githubusercontent.com/RafaeltiMoreira/desafio-page-youtube/main/.github/preview-page-youtube.png",
         "features": ["Flexbox", "Semântica", "Responsividade"],
         "technologies": [
           { 
-            "logo": "https://raw.githubusercontent.com/RafaeltiMoreira/desafio-page-youtube/main/.github/preview-page-youtube.png", 
-            "name": ["HTML5", "CSS3"]
+            "logo": "./data/imgs/html.png", 
+            "name": "HTML5"
+          },
+          { 
+            "logo": "./data/imgs/css.png", 
+            "name": "CSS3"
           }
         ],
         "links": {
-          "preview": "https://meusite.com/projeto1",
-          "github": "https://github.com/rafael/projeto1"
+          "preview": "https://raw.githubusercontent.com/RafaeltiMoreira/desafio-page-youtube/main/.github/preview-page-youtube.png",
+          "github": "https://github.com/RafaeltiMoreira/desafio-page-youtube"
         }
       },
       {
