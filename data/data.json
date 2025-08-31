@@ -42,35 +42,47 @@
         }
       },
       {
-        "name": "Landing Page Responsiva",
-        "description": "Página institucional otimizada para SEO",
-        "image": "assets/images/projects/landing.jpg",
-        "features": ["Grid Layout", "SEO", "Mobile First"],
+        "name": "Trilha CSS - DIO",
+        "description": "Desafio 03: Reproduzindo a Página do Discord com HTML e CSS",
+        "image": "https://raw.githubusercontent.com/RafaeltiMoreira/desafio-site-discord-css/main/.github/preview-2.png",
+        "features": ["Grid Layout", "Flexbox", "Responsividade", "HTML semântico."],
         "technologies": [
           { 
-            "logo": "assets/images/technologies/html.svg", 
-            "name": ["HTML5", "CSS3", "JavaScript"]
+            "logo": "https://raw.githubusercontent.com/RafaeltiMoreira/desafio-portfolio-dio/main/data/imgs/html.png", 
+            "name": "HTML5"
+          },
+          { 
+            "logo": "https://raw.githubusercontent.com/RafaeltiMoreira/desafio-portfolio-dio/main/data/imgs/css.png", 
+            "name": "CSS3"
           }
         ],
         "links": {
-          "preview": "https://meusite.com/projeto3",
-          "github": "https://github.com/rafael/projeto3"
+          "preview": "https://discord-css-dio.netlify.app/",
+          "github": "https://github.com/RafaeltiMoreira/desafio-site-discord-css"
         }
       },
       {
-        "name": "API de Processos",
-        "description": "API REST para gestão de processos administrativos",
-        "image": "assets/images/projects/api.jpg",
-        "features": ["Spring Boot", "DTO", "CRUD"],
+        "name": "Portfólio - DIO",
+        "description": "Portfólio Profissional no GitHub Pages",
+        "image": "https://raw.githubusercontent.com/RafaeltiMoreira/js-developer-portfolio/main/.github/preview-2.png",
+        "features": ["Página em HTML", "Estilização com CSS", "JavaScript", "JSON"],
         "technologies": [
           { 
-            "logo": "assets/images/technologies/java.svg", 
-            "name": ["Java", "Spring Boot"]
+            "logo": "https://raw.githubusercontent.com/RafaeltiMoreira/desafio-portfolio-dio/main/data/imgs/html.png", 
+            "name": "HTML5"
+          },
+          { 
+            "logo": "https://raw.githubusercontent.com/RafaeltiMoreira/desafio-portfolio-dio/main/data/imgs/css.png", 
+            "name": "CSS3"
+          },
+          { 
+            "logo": "https://raw.githubusercontent.com/RafaeltiMoreira/desafio-portfolio-dio/main/data/imgs/javascript.png", 
+            "name": "JavaScript"
           }
         ],
         "links": {
-          "preview": "https://meusite.com/projeto4",
-          "github": "https://github.com/rafael/projeto4"
+          "preview": "https://rafaeltimoreira.github.io/js-developer-portfolio/",
+          "github": "https://github.com/RafaeltiMoreira/js-developer-portfolio"
         }
       }
     ]
