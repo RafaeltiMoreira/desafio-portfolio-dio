@@ -45,7 +45,7 @@
         "name": "Trilha CSS - DIO",
         "description": "Desafio 03: Reproduzindo a Página do Discord com HTML e CSS",
         "image": "https://raw.githubusercontent.com/RafaeltiMoreira/desafio-site-discord-css/main/.github/preview-2.png",
-        "features": ["Grid Layout", "Flexbox", "Responsividade", "HTML semântico."],
+        "features": ["Grid Layout", "Flexbox", "Responsividade", "HTML semântico"],
         "technologies": [
           { 
             "logo": "https://raw.githubusercontent.com/RafaeltiMoreira/desafio-portfolio-dio/main/data/imgs/html.png", 

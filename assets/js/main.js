@@ -14,7 +14,7 @@
 //   const projects = profileData.portfolio.projects.slice(0, 4);
 
 //   projects.forEach((project, index) => {
-    
+
 //     const card = index === 0 && baseCard ? baseCard : document.createElement("div");
 
 //     card.className = `projects__card ${index === 1 || index === 3 ? "card--reverse" : ""}`;
@@ -84,7 +84,10 @@ function updateProjects(profileData) {
     card.className = `projects__card ${idx === 1 || idx === 3 ? "card--reverse" : ""}`;
 
     const featuresHTML = (project.features || [])
-      .map(f => `<li class="card__item">${f};</li>`)
+      .map((f, i, arr) => {
+        const isLast = i === arr.length - 1;
+        return `<li class="card__item">${f}${isLast ? "." : ";"}</li>`;
+      })
       .join("");
 
     const techsHTML = (project.technologies || [])
