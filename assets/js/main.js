@@ -29,7 +29,7 @@
 
 function updateProjects(profileData) {
   const projectsWrapper = document.querySelector(".projects__container")
-  const baseCard = document.getElementById(",projects__card")
+  const baseCard = document.getElementById(".projects__card")
 
   baseCard.innerHTML = ""
 
