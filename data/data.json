@@ -2,17 +2,17 @@
   "portfolio": {
     "projects": [
       {
-        "name": "Página do YouTube com HTML e CSS",
-        "description": "Página do YouTube",
+        "name": "Página do YouTube",
+        "description": "Página do YouTube feita com HTML e CSS",
         "image": "https://raw.githubusercontent.com/RafaeltiMoreira/desafio-page-youtube/main/.github/preview-page-youtube.png",
         "features": ["Flexbox", "Semântica", "Responsividade"],
         "technologies": [
           { 
-            "logo": "./data/imgs/html.png", 
+            "logo": "https://raw.githubusercontent.com/RafaeltiMoreira/desafio-portfolio-dio/main/data/imgs/html.png", 
             "name": "HTML5"
           },
           { 
-            "logo": "./data/imgs/css.png", 
+            "logo": "https://raw.githubusercontent.com/RafaeltiMoreira/desafio-portfolio-dio/main/data/imgs/css.png", 
             "name": "CSS3"
           }
         ],
@@ -22,19 +22,23 @@
         }
       },
       {
-        "name": "Dashboard Administrativo",
-        "description": "Painel para gestão de vendas e estoque",
-        "image": "assets/images/projects/dashboard.jpg",
-        "features": ["Gráficos", "Autenticação", "Responsividade"],
+        "name": "Trilha CSS - DIO",
+        "description": "Desafio 01 - Landing Page com HTML e CSS",
+        "image": "https://raw.githubusercontent.com/RafaeltiMoreira/trilha-css-desafio-01/main/.github/preview.png",
+        "features": ["Semântica", "Responsividade", "Boas práticas de estilização"],
         "technologies": [
           { 
-            "logo": "assets/images/technologies/react.svg", 
-            "name": ["React", "JavaScript"]
+            "logo": "https://raw.githubusercontent.com/RafaeltiMoreira/desafio-portfolio-dio/main/data/imgs/html.png", 
+            "name": "HTML5"
+          },
+          { 
+            "logo": "https://raw.githubusercontent.com/RafaeltiMoreira/desafio-portfolio-dio/main/data/imgs/css.png", 
+            "name": "CSS3"
           }
         ],
         "links": {
-          "preview": "https://meusite.com/projeto2",
-          "github": "https://github.com/rafael/projeto2"
+          "preview": "https://trilha-css-desafio-01.netlify.app/",
+          "github": "https://github.com/RafaeltiMoreira/trilha-css-desafio-01"
         }
       },
       {
