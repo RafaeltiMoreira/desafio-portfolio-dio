@@ -594,8 +594,12 @@ footer p {
     font-size: 1.3rem;
   }
 
-  .about__content1 .about__photo {
-    justify-content: center;
+  .about__content1 {
+    align-items: center;
+  }
+
+  .about__photo {
+    width: 60%;
   }
 }
 
