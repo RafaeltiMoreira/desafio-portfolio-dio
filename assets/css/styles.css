@@ -535,6 +535,56 @@ footer p {
     width: 3.8rem;
     height: 3.8rem;
   }
+
+   .main__content1 {
+    margin-top: 2rem;
+    gap: 2rem;
+  }
+
+  main {
+    gap: 6rem;
+  }
+
+  .menu--social {
+    justify-content: center;
+  }
+
+  .technologies {
+    gap: 2rem;
+  }
+
+  .projects {
+    margin-top: 2rem;
+  }
+
+  .btn--primary span {
+    font-size: 1rem;
+  }
+
+  .description__buttons {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 1rem;
+  }
+
+  .about__content2 .col1 {
+    gap: 4rem;
+  }
+
+  .about__content2 .col2 {
+    margin-top: 2rem;
+  }
+
+  .contact {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 2rem;
+  }
+
+  .header__brand .brand__logo {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
 }
 
 @media (min-width: 320px) {
@@ -591,6 +641,7 @@ footer p {
   .contact {
     padding: 6rem;
   }
+
   .contact p {
     width: 80%;
   }
