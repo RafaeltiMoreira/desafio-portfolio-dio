@@ -711,6 +711,10 @@ footer p {
   .description__buttons {
     justify-content: flex-start;
   }
+
+  p, span, li {
+    font-size: 1.15rem;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -755,9 +759,9 @@ footer p {
     height: 3rem;
   }
 
-  p, span, li {
+  /*p, span, li {
     font-size: 1.15rem;
-  }
+  }*/
 
   .card__buttons .btn,
   .description__buttons .btn {
