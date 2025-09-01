@@ -713,7 +713,7 @@ footer p {
   }
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   p, span, li {
     font-size: 1.1rem;
   }
