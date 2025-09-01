@@ -713,9 +713,9 @@ footer p {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1400px) {
   p, span, li {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
   }
 }
 
@@ -792,9 +792,9 @@ footer p {
     padding: 10rem 15rem 4rem;
   }
 
-  p, span, li {
+  /*p, span, li {
     font-size: 1.15rem;
-  }
+  }*/
 }
 
 .modal {
