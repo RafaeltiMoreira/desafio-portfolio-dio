@@ -594,7 +594,7 @@ footer p {
     font-size: 1.3rem;
   }
 
-  .about__content1 {
+  .about__content1 .about__photo {
     justify-content: center;
   }
 }
