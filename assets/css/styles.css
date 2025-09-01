@@ -711,10 +711,6 @@ footer p {
   .description__buttons {
     justify-content: flex-start;
   }
-
-  p, span, li {
-    font-size: 1.15rem;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -792,6 +788,10 @@ footer p {
   
   .technologies, .projects, .about {
     padding: 10rem 15rem 4rem;
+  }
+
+  p, span, li {
+    font-size: 1.15rem;
   }
 }
 
