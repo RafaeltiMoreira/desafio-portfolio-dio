@@ -166,14 +166,31 @@
               <i class="bi bi-arrow-up-right"></i>
             </button>
           </a>
-          <a href="assets/documents/currículo_assinado.pdf" download="currículo_rafael_moreira.pdf">
+          <!-- <a href="assets/documents/currículo_assinado.pdf" download="currículo_rafael_moreira.pdf">
             <button class="btn" onclick="downloadCurriculo()">
               <span>Currículo</span>
             </button>
-          </a>
+          </a> -->
+
+          <!--Modal-->
+          <div id="modalCurriculo" class="modal">
+            <div class="modal-content">
+              <h3>Download do Currículo</h3>
+              <p>Deseja baixar o currículo em formato PDF?</p>
+              <div class="modal-buttons">
+                <button class="modal-btn modal-btn--confirm" onclick="confirmarDownload()">Sim, baixar</button>
+                <button class="modal-btn modal-btn--cancel" onclick="fecharModal()">Cancelar</button>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn" onclick="abrirModalCurriculo()">
+            <span>Currículo</span>
+          </button>
         </div>
       </div>
     </div>
+
     <div class="about__content2">
       <div class="col1">
         <div class="row1">
@@ -247,7 +264,8 @@
                 Digital Innovation One. Ago 2025. 3h.
               </p>
               <p>
-                Portfólio totalmente dinâmica, consumindo dados de um arquivo JSON para exibir informações profissionais, experiências, habilidades e projetos.
+                Portfólio totalmente dinâmica, consumindo dados de um arquivo JSON para exibir informações
+                profissionais, experiências, habilidades e projetos.
               </p>
             </div>
           </div>

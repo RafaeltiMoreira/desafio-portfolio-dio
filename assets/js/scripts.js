@@ -73,14 +73,63 @@ menuLinks.forEach(item => {
   }
 })();
 
-function downloadCurriculo() {
-  const pdfPath = 'assets/documents/currículo_assinado.pdf';
+// function downloadCurriculo() {
+//   const pdfPath = 'assets/documents/currículo_assinado.pdf';
   
-  const link = document.createElement('a');
-  link.href = pdfPath;
-  link.download = 'currículo_rafael_moreira.pdf';
+//   const link = document.createElement('a');
+//   link.href = pdfPath;
+//   link.download = 'currículo_rafael_moreira.pdf';
   
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
+//   document.body.appendChild(link);
+//   link.click();
+//   document.body.removeChild(link);
+// }
+
+function abrirModalCurriculo() {
+  const modal = document.getElementById('modalCurriculo');
+  modal.style.display = 'block';
 }
+
+function fecharModal() {
+  const modal = document.getElementById('modalCurriculo');
+  modal.style.display = 'none';
+}
+
+function confirmarDownload() {
+  fecharModal();
+  downloadCurriculo();
+}
+
+function downloadCurriculo() {
+  try {
+    const pdfPath = 'assets/documents/currículo_assinado.pdf';
+    
+    const link = document.createElement('a');
+    link.href = pdfPath;
+    link.download = 'currículo_rafael_moreira.pdf';
+    
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    
+    console.log('Download do currículo iniciado');
+  } catch (error) {
+    console.error('Erro ao baixar currículo:', error);
+    alert('Erro ao baixar o currículo. Tente novamente.');
+  }
+}
+
+// Fechar modal ao clicar fora dele
+window.onclick = function(event) {
+  const modal = document.getElementById('modalCurriculo');
+  if (event.target === modal) {
+    fecharModal();
+  }
+}
+
+// Fechar modal com tecla ESC
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') {
+    fecharModal();
+  }
+});
