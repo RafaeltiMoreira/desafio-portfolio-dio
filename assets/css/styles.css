@@ -585,6 +585,10 @@ footer p {
     width: 2.25rem;
     height: 2.25rem;
   }
+
+  .main__subtitle {
+    font-size: 1.3rem;
+  }
 }
 
 @media (min-width: 320px) {
