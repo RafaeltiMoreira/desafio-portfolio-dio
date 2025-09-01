@@ -713,6 +713,12 @@ footer p {
   }
 }
 
+@media (min-width: 1024px) {
+  p, span, li {
+    font-size: 1.1rem;
+  }
+}
+
 @media (min-width: 1200px) {
 
   h2 {
@@ -753,10 +759,6 @@ footer p {
   
   .technologies__logo {
     height: 3rem;
-  }
-
-  p, span, li {
-    font-size: 1.1rem;
   }
 
   .card__buttons .btn,
