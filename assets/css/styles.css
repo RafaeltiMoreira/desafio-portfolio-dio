@@ -229,14 +229,16 @@ p {
   border-radius: 3.125rem;
   border: none;
   padding: 0.875rem 1.5rem;
-  transition: ease-in-out .3s;
+  transition: all 0.3s ease;
+  /* transition: ease-in-out .3s; */
   cursor: pointer;
   color: var(--primary-color);
 }
 
 .btn:hover {
-  transform: scale(1.05);
-  transition: ease-in-out .3s;
+  /* transform: scale(1.05); */
+  transform: translateY(-2px);
+  /* transition: ease-in-out .3s; */
 }
 
 .btn span, .btn i {
@@ -610,10 +612,6 @@ footer p {
 
   .main__subtitle {
     text-align: center;
-  }
-
-  .menu--social {
-    gap: 0.5rem;
   }
 }
 
