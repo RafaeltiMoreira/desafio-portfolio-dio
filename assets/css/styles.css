@@ -250,7 +250,6 @@ p {
 
 .btn--primary {
   border: 1px solid var(--primary-color);
-  /* margin-top: 1.5rem; */
 }
 
 main, .projects, .about, .contact {
@@ -400,8 +399,8 @@ main {
 .about__content1, .about__content2 {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   gap: 2rem;
 }
 
@@ -419,6 +418,7 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   gap: 1.5rem;
+  padding: 0.5rem;
 }
 
 .about__icons {
@@ -594,10 +594,6 @@ footer p {
     font-size: 1.3rem;
   }
 
-  .about__content1 {
-    align-items: center;
-  }
-
   .about__photo {
     width: 60%;
   }
@@ -713,12 +709,6 @@ footer p {
   }
 }
 
-@media (max-width: 1400px) {
-  p, span, li {
-    font-size: 1.15rem;
-  }
-}
-
 @media (min-width: 1200px) {
 
   h2 {
@@ -767,6 +757,12 @@ footer p {
   }
 }
 
+@media (min-width: 1367px) {
+  p, span, li {
+    font-size: 1.15rem;
+  }
+}
+
 @media (min-width: 1400px) {
   h1 {
     font-size: 6.25rem;
@@ -791,10 +787,6 @@ footer p {
   .technologies, .projects, .about {
     padding: 10rem 15rem 4rem;
   }
-
-  /*p, span, li {
-    font-size: 1.15rem;
-  }*/
 }
 
 .modal {
